@@ -439,11 +439,11 @@ try:
                     self.label_output1.clear()
                     # pw = pg.PlotWidget()
                     # pw.getAxis('bottom').hide()
-                    image = cv2.imread(r'D:\SBME\SBE_3.1\DSP\task 4 (FT mixer)\shared task4 (2)\test.jpg')
+                    image = cv2.imread(r'test.jpg')
                     self.label_output1.setImage(image.T)
                 else:
                     self.label_output2.clear()
-                    image = cv2.imread(r'D:\SBME\SBE_3.1\DSP\task 4 (FT mixer)\shared task4 (2)\test.jpg')
+                    image = cv2.imread(r'test.jpg')
                     self.label_output2.setImage(image.T)
             except Exception as e:
                 logging.error(f"update_output_image: {e}")
